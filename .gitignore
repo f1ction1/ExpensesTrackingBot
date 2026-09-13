@@ -1,0 +1,8 @@
+.vs/
+.tools/
+**/bin/
+**/obj/
+**/*.user
+.env
+secrets/
+docker-compose*.user

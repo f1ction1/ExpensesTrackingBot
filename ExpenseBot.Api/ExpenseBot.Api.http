@@ -1,0 +1,11 @@
+@ExpenseBot.Api_HostAddress = http://localhost:5257
+
+GET {{ExpenseBot.Api_HostAddress}}/health/live
+Accept: application/json
+
+###
+
+GET {{ExpenseBot.Api_HostAddress}}/health/ready
+Accept: application/json
+
+###

@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="docker-compose.dcproj">
+    <Build />
+  </Project>
+  <Project Path="ExpenseBot.Api/ExpenseBot.Api.csproj" />
+  <Project Path="ExpenseBot.Api.Tests/ExpenseBot.Api.Tests.csproj" />
+</Solution>
