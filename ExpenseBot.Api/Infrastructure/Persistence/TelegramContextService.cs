@@ -18,7 +18,7 @@ public sealed class TelegramContextService(NpgsqlDataSource dataSource) : ITeleg
         var ledgerId = await UpsertLedgerAsync(connection, transaction, chat, cancellationToken);
 
         await UpsertMembershipAsync(connection, transaction, ledgerId, userId, cancellationToken);
-        await SeedCategoriesAsync(connection, transaction, ledgerId, cancellationToken);
+        //await SeedCategoriesAsync(connection, transaction, ledgerId, cancellationToken);
         await transaction.CommitAsync(cancellationToken);
 
         return new TelegramContextIds(userId, ledgerId);
